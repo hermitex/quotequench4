@@ -31,21 +31,21 @@ const displayQuotes = (quotes) => {
   console.log(quotes);
   quotes.map((quote) => {
     output += `
-    <div class='container' style='width: 100%'>
+    <div class="container">
+  
+    <div class="quote">
 
-        <div class='quote'>
+        <div>
             <div>
-                <div>
-                    <span id="yellow-bar">
-                    </span>
-                </div>
-
-                <p class="quote-content">
-                    ${quote.quoteText}
-                </p>
+                <span id="yellow-bar">
+                </span>
             </div>
+            <p class="quote-content">
+            “${quote.quoteText}”
+            </p>
         </div>
 
+    </div>
     <div class="details">
         <div class="author">
             <a href="#">
@@ -58,9 +58,12 @@ const displayQuotes = (quotes) => {
                     : ""
                 }</span>
             </a>
+            
         </div>
+      
     </div>
 </div>
+
 `;
   });
   if (quoteContainer) {

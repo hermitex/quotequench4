@@ -18,7 +18,6 @@ body {
 }
 .header {
   height: 2rem;
-  top: 0;
   margin: auto;
 }
 svg.bi-arrow-repeat {
