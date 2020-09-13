@@ -19,6 +19,7 @@ body {
 .header {
   /* height: 2rem; */
   margin: auto;
+  margin-bottom: 2rem;
 }
 svg.bi-arrow-repeat {
   animation: spin 0.3s linear;
