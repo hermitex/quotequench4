@@ -31,7 +31,7 @@ const displayQuotes = (quotes) => {
   console.log(quotes);
   quotes.map((quote) => {
     output += `
-    <div class='container'>
+    <div class='container' style='width: 100%'>
 
         <div class='quote'>
             <div>
@@ -60,7 +60,7 @@ const displayQuotes = (quotes) => {
             </a>
         </div>
     </div>
-</div>1
+</div>
 `;
   });
   if (quoteContainer) {
