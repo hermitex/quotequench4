@@ -1,9 +1,8 @@
-const quoteContainer = document.querySelector(".quote-content");
+const quoteContainer = document.querySelector("#quote-content");
 const nextQuote = document.querySelector("#next-quote");
-const firstName = document.querySelector(".first-name");
-const lastName = document.querySelector(".last-name");
-const quoteCategory = document.querySelector(".category");
-const authorName = document.querySelector(".author a");
+const authorName = document.querySelector("#author-name");
+const quoteCategory = document.querySelector("#quote-genre");
+// const authorName = document.querySelector(".author a");
 const spinner = document.querySelector(".bi.bi-arrow-repeat");
 
 // Random Quote
@@ -20,11 +19,10 @@ const fetchQuote = async () => {
     console.log(error);
   }
 };
-
+console.log(quoteCategory);
 const displayQuote = (quote) => {
   quoteContainer.textContent = `“${quote.quoteText}”`;
-  firstName.textContent = quote.quoteAuthor.split(" ")[0];
-  lastName.textContent = quote.quoteAuthor.split(" ")[1];
+  authorName.textContent = quote.quoteAuthor;
   quoteCategory.textContent = quote.quoteGenre;
 };
 
