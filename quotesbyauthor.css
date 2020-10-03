@@ -1,0 +1,10 @@
+.quote-card {
+  background-color: #c4c4c4;
+}
+@media screen and (min-width: 768px) {
+  .card-content {
+    padding-right: 8rem;
+    padding-left: 8rem;
+    line-height: 2.5rem;
+  }
+}
