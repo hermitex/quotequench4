@@ -1,5 +1,8 @@
 .quote-card {
   background-color: #c4c4c4;
 }
-.author:hover {
+@media screen and (min-width: 768px) {
+  .card-content {
+    padding: 10rem;
+  }
 }
