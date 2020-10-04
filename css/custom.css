@@ -1,119 +1,30 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+input[type="number"] {
+  min-width: 3.5rem;
 }
 
-body {
-  background-color: #333333;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  justify-items: center;
-  justify-content: center;
-  overflow-y: auto;
+#quote-info,
+#next-quote {
+  transition: all 2s ease;
 }
-.header {
-  /* height: 2rem; */
-  margin: auto;
-  margin-bottom: 2rem;
-}
-svg.bi-arrow-repeat {
-  animation: spin 0.3s linear;
-}
-.spinner {
-  list-style: none;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  text-align: center;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotateZ(0);
-  }
-  100% {
-    transform: rotateZ(360deg);
-  }
-}
-.no-animation {
-  animation-play-state: paused;
-}
-.quote {
-  position: relative;
-}
-
-#yellow-bar {
-  position: absolute;
-  width: 8px;
-  height: 60%;
-  left: 2;
-  background: #f7df94;
-  top: 2.5rem;
-}
-.container {
-  position: relative;
-  background-color: #ffffff;
-  padding: 1rem;
-  width: 90%;
-  height: auto;
-  margin: 0 auto;
-  font-weight: 500;
-  line-height: 1.5rem;
-  border-radius: 12px;
-  margin-bottom: 1rem;
-}
-
-.quote-content {
-  position: relative;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  letter-spacing: 0.5px;
-  left: 1rem;
-}
-.container div {
-  /* margin-bottom: 5rem; */
-}
-.details {
-  margin-top: 1rem;
-  display: flex;
-  justify-content: space-between;
-  transition: all 0.25s ease-in;
-}
-.author a {
-  text-decoration: none;
-  color: inherit;
-}
-.author .category {
-  display: block;
-}
-.author button {
-  background-color: none;
-  outline: none;
-  background-color: transparent;
-  border: none;
-}
-.details:hover {
-  background-color: #333333;
-  cursor: pointer;
-  padding: 1rem;
+#quote-info:hover {
+  background-color: #0a0a0a;
   color: #ffffff;
-  border: 0.1rem solid #18a0fb;
 }
 
-.arrow-left svg {
-  vertical-align: middle;
+#heart {
+  transition: all 2s ease;
+}
+#heart:hover {
+  fill: #ff0000;
+  height: 1.5em !important;
 }
 
-@media screen and (min-width: 960px) {
-  .container {
-    font-size: 36px;
-    line-height: 3rem;
+@media screen and (max-width: 760px) {
+  .control-btn {
+    margin-top: 5rem;
+    margin-bottom: 0.1rem !important;
+  }
+  .full-width {
+    width: 100vw;
   }
 }

@@ -12,14 +12,14 @@ const url = "https://quote-garden.herokuapp.com/api/v2/quotes/random";
 // Quotes By Specific Author
 
 const fetchQuote = async () => {
-  let loader = `
-  <div class="loader">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-  `;
-  quoteContainer.innerHTML = loader;
+  let loader = ` 
+     <div class="loader">
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+`;
+
+  // quoteContainer.innerHTML = loader;
   try {
     const response = await fetch(url);
     const data = await response.json();
