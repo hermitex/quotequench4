@@ -3,9 +3,6 @@ const nextQuote = document.querySelector("#next-quote");
 const authorName = document.querySelector("#author-name");
 const quoteCategory = document.querySelector("#quote-genre");
 
-const loader = document.querySelector(".loader");
-const main = document.querySelector(".main");
-
 // const authorName = document.querySelector(".author a");
 const spinner = document.querySelector(".bi.bi-arrow-repeat");
 

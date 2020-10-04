@@ -1,3 +1,18 @@
+body {
+  /* background: linear-gradient(135deg, #f5f7fa 0%, #bcc7d8 100%); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.main {
+  text-align: center;
+  width: 90;
+  opacity: 0;
+  display: none;
+  transition: opacity 2s ease-in;
+}
 .loader {
   display: flex;
   justify-content: center;

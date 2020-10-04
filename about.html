@@ -11,126 +11,158 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loader.css">
     <title>QQ</title>
 </head>
 
 <body class="overflow-auto">
-    <nav class="navbar  navbar-light container">
-        <a href="#" class="navbar-brand">LOGO</a>
-        <div class="navbarSupportedContent ">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link text-uppercase">About Us</a>
-                </li>
-            </ul>
-        </div>
 
-        <div>
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <button class="btn shadow-sm  rounded-pill  text-uppercase " data-toggle="modal"
-                        data-target="#login">login<svg width="1em" height="1em" viewBox="0 0 16 16"
-                            class="bi bi-box-arrow-in-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
-                                d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z" />
-                            <path fill-rule="evenodd"
-                                d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
-                        </svg>
-                    </button>
+    <!-- Loader 1 -->
+    <!-- 
+    <div class="loader">
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div> -->
 
 
-                    <div class="modal fade " id="login" tabindex="-1" aria-labelledby="login" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="login"><svg width="1em" height="1em" viewBox="0 0 16 16"
-                                            class="bi bi-person-fill" fill="currentColor"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-                                        </svg>Login</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <form>
-                                        <div class="form-group">
-                                            <label for="email">Email</label>
-                                            <input type="email" class="form-control" name="email" id="email"
-                                                placeholder="example@gmail.com">
-                                        </div>
 
-                                        <div class="form-group">
-                                            <label for="password">Password </label>
-                                            <input type="password" class="form-control" name="password" id="password"
-                                                placeholder="Password">
+    <!--Loader 2-->
 
-                                        </div>
+    <!-- <div class="loader">
+        Loading
+    </div> -->
 
-                                        <div>
-                                            <ul class="list-unstyled d-flex justify-content-between">
-                                                <li>
-                                                    <button type="submit" class="btn btn-secondary">Sign In</button>
-                                                    <small class="d-block"> <a href="#">Forgot password?</a> </small>
-                                                </li>
-                                                <li>
-                                                    <button type="button" class="btn btn-primary">
-                                                        Create Account
-                                                    </button>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </form>
+
+    <!--Loader 3-->
+
+
+    <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="main">
+        <nav class="navbar  navbar-light container">
+            <a href="#" class="navbar-brand">LOGO</a>
+            <div class="navbarSupportedContent ">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link text-uppercase">About Us</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <button class="btn shadow-sm  rounded-pill  text-uppercase " data-toggle="modal"
+                            data-target="#login">login<svg width="1em" height="1em" viewBox="0 0 16 16"
+                                class="bi bi-box-arrow-in-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z" />
+                                <path fill-rule="evenodd"
+                                    d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                            </svg>
+                        </button>
+
+
+                        <div class="modal fade " id="login" tabindex="-1" aria-labelledby="login" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="login"><svg width="1em" height="1em"
+                                                viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                            </svg>Login</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="email">Email</label>
+                                                <input type="email" class="form-control" name="email" id="email"
+                                                    placeholder="example@gmail.com">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="password">Password </label>
+                                                <input type="password" class="form-control" name="password"
+                                                    id="password" placeholder="Password">
+
+                                            </div>
+
+                                            <div>
+                                                <ul class="list-unstyled d-flex justify-content-between">
+                                                    <li>
+                                                        <button type="submit" class="btn btn-secondary">Sign In</button>
+                                                        <small class="d-block"> <a href="#">Forgot password?</a>
+                                                        </small>
+                                                    </li>
+                                                    <li>
+                                                        <button type="button" class="btn btn-primary">
+                                                            Create Account
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container ">
+            <div class="row d-flex justify-content-md-center align-items-center vh-100">
+
+                <div class="col-12  mt-0 pt-0">
+                    <div class="card border-0 quote-card my-auto  h-100">
+                        <div class="card-body card-content ">
+                            <blockquote class="blockquote mb-0">
+                                <p>We are a group of individuals from around the globe that believe in human inspiration
+                                    as
+                                    cornerstone of human prosperity and we foster this by bringing you the best quotes
+                                    from
+                                    the greatest minds of all times.
+                                    We Believe!</p>
+
+                                <button class="btn">
+                                    <svg class="text-warning w-auto m-auto" width="1em" height="1em" viewBox="0 0 16 16"
+                                        class="bi bi-heart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                                    </svg>
+                                </button>
+                            </blockquote>
+                        </div>
+
+
+
+                        <div class="control-btn mt-md-5 m-auto">
+                            <a href="custom.html">
+                                <button type="button" class=" btn btn-secondary btn-light rounded-pill shadow-sm">
+                                    <svg class="d-block" width="1em" height="1em" viewBox="0 0 16 16"
+                                        class="bi bi-arrow-right-circle-fill" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-11.5.5a.5.5 0 0 1 0-1h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5z" />
+                                    </svg>
+                                    Custom
+                                </button>
+                            </a>
+                        </div>
+
+
+
                     </div>
-
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container ">
-        <div class="row d-flex justify-content-md-center align-items-center vh-100">
-
-            <div class="col-12  mt-0 pt-0">
-                <div class="card border-0 quote-card my-auto  h-100">
-                    <div class="card-body card-content ">
-                        <blockquote class="blockquote mb-0">
-                            <p>We are a group of individuals from around the globe that believe in human inspiration as
-                                cornerstone of human prosperity and we foster this by bringing you the best quotes from
-                                the greatest minds of all times.
-                                We Believe!</p>
-
-                            <button class="btn">
-                                <svg class="text-warning w-auto m-auto" width="1em" height="1em" viewBox="0 0 16 16"
-                                    class="bi bi-heart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd"
-                                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
-                                </svg>
-                            </button>
-                        </blockquote>
-                    </div>
-
-
-
-                    <div class="control-btn mt-md-5 m-auto">
-                        <a href="custom.html">
-                            <button type="button" class=" btn btn-secondary btn-light rounded-pill shadow-sm">
-                                <svg class="d-block" width="1em" height="1em" viewBox="0 0 16 16"
-                                    class="bi bi-arrow-right-circle-fill" fill="currentColor"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd"
-                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-11.5.5a.5.5 0 0 1 0-1h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5z" />
-                                </svg>
-                                Custom
-                            </button>
-                        </a>
-                    </div>
-
-
-
                 </div>
             </div>
         </div>
@@ -146,6 +178,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="js/loader.js"></script>
 </body>
 
 </html>
