@@ -1,34 +1,51 @@
+import { QUOTES } from "./quotesDB.js";
+
 const input = document.querySelector("#number-of-quotes");
 const getQuotesButton = document.querySelector("#get-quotes");
 const container = document.querySelector("#quote-sibling");
 const header = document.querySelector(".header");
 const quoteContainer = document.createElement("div");
 
-input.addEventListener("input", (e) => {
-  if (e.target.value) {
-    getQuotesButton.disabled = false;
-  } else {
-    getQuotesButton.disabled = true;
-  }
-});
+// input.addEventListener("input", (e) => {
+//   if (e.target.value) {
+//     getQuotesButton.disabled = false;
+//   } else {
+//     getQuotesButton.disabled = true;
+//   }
+// });
 
-// Random Quote
-const url = "https://quote-garden.herokuapp.com/api/v2/quotes?page=1&limit=";
+// // Random Quote
+// const url = "https://quote-garden.herokuapp.com/api/v2/quotes?page=1&limit=";
 
-const fetchQuotes = async (limit) => {
+// const fetchQuotes = async (limit) => {
+//   let loader = `
+//   <div class="loader-dots text-center text-success">
+//   Loading
+// </div>
+//   `;
+//   quoteContainer.innerHTML = loader;
+//   try {
+//     const response = await fetch(url + limit);
+//     const data = await response.json();
+//     displayQuotes(data.quotes);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// };
+
+const getTheSpecifiedNUmberOfQuotes = (quotes, number) => {
+  parseInt(number);
   let loader = `
-  <div class="loader-dots text-center text-success">
-  Loading
-</div>
-  `;
+  <div class="loader-dots text-success pl-5 w-100 d-flex justify-content-center align-items-center text-center">
+     Please wait
+ </div>
+`;
   quoteContainer.innerHTML = loader;
-  try {
-    const response = await fetch(url + limit);
-    const data = await response.json();
-    displayQuotes(data.quotes);
-  } catch (error) {
-    console.log(error);
-  }
+  const specifiedQuotes = quotes.filter((quote) => quote.id <= number);
+  console.log(specifiedQuotes);
+  setTimeout(() => {
+    displayQuotes(specifiedQuotes);
+  }, 4000);
 };
 
 const displayQuotes = (quotes) => {
@@ -40,7 +57,7 @@ const displayQuotes = (quotes) => {
                     <div class="card border-0 quote-card my-2  h-100 mb-5">
                         <div class="card-body card-content">
                             <blockquote class="blockquote mb-0">
-                                <p id="quote-content"> “${quote.quoteText}”</p>
+                                <p id="quote-content"> “${quote.quote}”</p>
                                 <div class="d-flex justify-content-center">
                                     <button class="btn">
                                         <svg id="heart" class="text-warning w-auto m-auto" width="1em" height="1em"
@@ -55,14 +72,12 @@ const displayQuotes = (quotes) => {
                             </blockquote>
                         </div>
 
-                        <div id="quote-info" class="card   p-1 border-0 w-75 mx-auto mb-4 shadow text-center">
+                        <div id="quote-info" class="card   p-1 border-0 w-md-25 mx-auto mb-4 shadow text-center">
                             <div>
                                 <a href="quotesbyauthor.html">
-                                    <p id="author-name">${
-                                      quote.quoteAuthor
-                                        ? quote.quoteAuthor
-                                        : `Unknown`
-                                    }</p>
+                                    <p id="author-name">
+                                    ${quote.authorFirstName} ${quote.authorSecondName}                                       
+                                    </p>
                                 </a>
                             </div>
                         </div>
@@ -86,5 +101,5 @@ const displayQuotes = (quotes) => {
 
 getQuotesButton.addEventListener("click", (e) => {
   e.preventDefault();
-  fetchQuotes(input.value);
+  getTheSpecifiedNUmberOfQuotes(QUOTES, input.value);
 });
