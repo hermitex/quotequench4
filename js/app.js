@@ -13,7 +13,7 @@ const url = "https://quote-garden.herokuapp.com/api/v2/quotes/random";
 
 const fetchQuote = async () => {
   let loader = ` 
-     <div class="loader-dots">
+     <div class="loader-dots text-success">
         Loading
     </div>
 `;

@@ -17,7 +17,7 @@ const url = "https://quote-garden.herokuapp.com/api/v2/quotes?page=1&limit=";
 
 const fetchQuotes = async (limit) => {
   let loader = `
-  <div class="loader-dots text-center">
+  <div class="loader-dots text-center text-success">
   Loading
 </div>
   `;
