@@ -36,7 +36,7 @@ const quoteContainer = document.createElement("div");
 const getTheSpecifiedNUmberOfQuotes = (quotes, number) => {
   parseInt(number);
   let loader = `
-  <div class="loader-dots text-success pl-5 w-100 d-flex justify-content-center align-items-center text-center">
+  <div class="loader-dots text-success pl-5 d-flex justify-content-center align-items-center text-center">
      Please wait
  </div>
 `;
@@ -72,7 +72,7 @@ const displayQuotes = (quotes) => {
                             </blockquote>
                         </div>
 
-                        <div id="quote-info" class="card   p-1 border-0 w-md-25 mx-auto mb-4 shadow text-center">
+                        <div id="quote-info" class="card   py-1 px-2 border-0 w-md-25 mx-auto mb-4 shadow text-center">
                             <div>
                                 <a href="quotesbyauthor.html">
                                     <p id="author-name">
