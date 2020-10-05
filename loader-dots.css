@@ -7,20 +7,19 @@ body {
   min-height: 100vh;
 }
 .main {
-  /* text-align: center; */
-  width: 90;
+  width: 90vw;
   opacity: 0;
   display: none;
   transition: opacity 2s ease-in;
 }
 
-.loader {
+.loader-dots {
   font-size: 1rem;
   color: purple;
   text-align: center;
 }
 
-.loader::after {
+.loader-dots::after {
   content: "\2026";
   display: inline-block;
   overflow: hidden;

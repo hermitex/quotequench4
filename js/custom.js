@@ -16,6 +16,12 @@ input.addEventListener("input", (e) => {
 const url = "https://quote-garden.herokuapp.com/api/v2/quotes?page=1&limit=";
 
 const fetchQuotes = async (limit) => {
+  let loader = `
+  <div class="loader-dots text-center">
+  Loading
+</div>
+  `;
+  quoteContainer.innerHTML = loader;
   try {
     const response = await fetch(url + limit);
     const data = await response.json();
@@ -30,7 +36,7 @@ const displayQuotes = (quotes) => {
 
   quotes.map((quote) => {
     output += `
-    <div class="col-12  full-width">
+    <div class="col-12  ">
                     <div class="card border-0 quote-card my-2  h-100 mb-5">
                         <div class="card-body card-content">
                             <blockquote class="blockquote mb-0">
